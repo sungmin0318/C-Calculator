@@ -1,0 +1,6 @@
+C:\Users\naray\source\repos\Calculator\SampleStack\bin\Debug\SampleStack.exe.config
+C:\Users\naray\source\repos\Calculator\SampleStack\bin\Debug\SampleStack.exe
+C:\Users\naray\source\repos\Calculator\SampleStack\bin\Debug\SampleStack.pdb
+C:\Users\naray\source\repos\Calculator\SampleStack\obj\Debug\SampleStack.csproj.CoreCompileInputs.cache
+C:\Users\naray\source\repos\Calculator\SampleStack\obj\Debug\SampleStack.exe
+C:\Users\naray\source\repos\Calculator\SampleStack\obj\Debug\SampleStack.pdb
