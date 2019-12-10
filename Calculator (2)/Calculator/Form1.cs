@@ -146,7 +146,7 @@ namespace Calculator
             sign_check('/');
         }
 
-        //+/-버튼 클릭시 동작
+        // +/-버튼 클릭시 동작
         private void button_negate_Click(object sender, EventArgs e)
         {
             if (textBox_result.Text == "0")
@@ -459,7 +459,7 @@ namespace Calculator
             return char_stack_Array[char_stack_top--];
         }
 
-        //계산식을 후위연산자로 변환해주는 함수
+        // HSM : 계산식을 후위연산자로 변환해주는 함수(.에관한부분이 추가되야됨)
         string[] convert_eq(string eq)
         {
             //eq = "12-6/2-(20+10)";
@@ -505,6 +505,12 @@ namespace Calculator
                 if ((temp >= 48 && temp <= 57) && (a == '+' || a == '-' || a == '*' || a == '/' || a == '(' || a == ')'))
                 {
                     count++;
+                }
+
+                if(temp >=48 && temp <=57 && a == '.')
+                {
+                    postfix_eq[count] += a;
+                    continue;
                 }
 
                 if (a >= 48 && a <= 57)
@@ -560,10 +566,6 @@ namespace Calculator
                         }
                         else if (x == '+' || x == '-' || x == '(' || x==' ')
                         {
-                            //if (char_stack_top > -1 && (char_stack_Array[char_stack_top] == '+' || char_stack_Array[char_stack_top] == '-'))
-                            //{
-                            //    postfix_eq[count++] += char_pop();
-                            //}?
                             char_push(a);
                         }
                     }
